@@ -1,4 +1,6 @@
 UI_EN = {
-    UI_trait_ThirdEchelonEquip = "Third Echelon Equipment",
-    UI_trait_ThirdEchelonEquipdesc = "Starts limited Third Echelon equipment, Urban camo, M9 Pistol, Third Echelon knife, and spare 9mm Rounds"
+    UI_trait_StandardEquipment = "Standard Equipment",
+    UI_trait_StandardEquipmentdesc = "You start with some of your standard equipment",
+    UI_trait_Injured = "Injured",
+    UI_trait_Injureddesc = "You barely made it out alive from the previous encounter with the zeds"
 }

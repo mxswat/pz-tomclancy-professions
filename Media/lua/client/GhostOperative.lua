@@ -1,22 +1,18 @@
-ProfessionFramework.addProfession('ThirdEchelon', {
-    name = "Third Echelon Operative",
-    icon = "profession_ThirdEchelonOperative",
+ProfessionFramework.addProfession('Ghost', {
+    name = "Ghost Recon Operative",
+    icon = "profession_GhostOperative",
     cost = -4,
     xp = {
-        [Perks.Lightfoot] = 5,
-        [Perks.Sneak] = 5,
         [Perks.Nimble] = 5,
-        [Perks.Aiming] = 3,
-        [Perks.SmallBlade] = 4
+        [Perks.Aiming] = 6,
+        [Perks.Reloading] = 6,
     },
     clothing = {
         -- not working with the current version of the Framework on steam. as date 02-JAN-2022
     },
     traits = {
-        'NightVision2', -- The Pro version of the cat'eyes (NightVision) trait is thanks to the ProfessionFramework mod
-        'Burglar',
+        'Outdoorsman2',
         'Brave2',
-        'Graceful2',
         'StandardEquipment',
         'Injured',
     },
@@ -32,7 +28,7 @@ ProfessionFramework.addProfession('ThirdEchelon', {
 
 ClothingSelectionDefinitions = ClothingSelectionDefinitions or {};
 
-ClothingSelectionDefinitions.ThirdEchelon = {
+ClothingSelectionDefinitions.Ghost = {
 	Female = {
         Hat = {
             items = {"Hat_BalaclavaFull"}
