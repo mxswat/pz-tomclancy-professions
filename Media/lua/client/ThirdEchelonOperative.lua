@@ -1,16 +1,16 @@
 ProfessionFramework.addProfession('ThirdEchelon', {
     name = "Third Echelon Operative",
     icon = "profession_ThirdEchelonOperative",
-    cost = -4,
+    cost = 0,
     xp = {
         [Perks.Lightfoot] = 5,
         [Perks.Sneak] = 5,
-        [Perks.Nimble] = 5,
+        [Perks.Nimble] = 3,
         [Perks.Aiming] = 3,
-        [Perks.SmallBlade] = 4
+        [Perks.SmallBlade] = 5
     },
     clothing = {
-        -- not working with the current version of the Framework on steam. as date 02-JAN-2022
+        -- not working with the current version of the Profession Framework on steam. as date 02-JAN-2022
     },
     traits = {
         'NightVision2', -- The Pro version of the cat'eyes (NightVision) trait is thanks to the ProfessionFramework mod
