@@ -14,6 +14,7 @@ ProfessionFramework.addProfession('ThirdEchelon', {
     traits = {
         'NightVision2', -- The Pro version of the cat'eyes (NightVision) trait is thanks to the ProfessionFramework mod
         'Burglar',
+        'Brave2',
         'Graceful2',
         'StandardEquipment',
         'Injured',

@@ -14,15 +14,15 @@ ProfessionFramework.addTrait('Injured', {
         local ForeArm_L = player:getBodyDamage():getBodyPart(BodyPartType.ForeArm_L)
 
         Torso_Upper:setCut(true);
-        player:getBodyDamage():SetBandaged(Torso_Upper:getIndex(), true, 20, true, "Base.Bandage");
+        player:getBodyDamage():SetBandaged(Torso_Upper:getIndex(), true, 25, true, "Base.Bandage");
 
         ForeArm_L:generateDeepWound();
-        player:getBodyDamage():SetBandaged(ForeArm_L:getIndex(), true, 20, true, "Base.Bandage");
+        player:getBodyDamage():SetBandaged(ForeArm_L:getIndex(), true, 30, true, "Base.Bandage");
 
         LowerLeg_L:setScratched(true, true);
         if isClient() then
-            sendBandage(player:getOnlineID(), Torso_Upper:getIndex(), true, 20, false, "Base.Bandage");
-            sendBandage(player:getOnlineID(), ForeArm_L:getIndex(), true, 20, false, "Base.Bandage");
+            sendBandage(player:getOnlineID(), Torso_Upper:getIndex(), true, 25, false, "Base.Bandage");
+            sendBandage(player:getOnlineID(), ForeArm_L:getIndex(), true, 30, false, "Base.Bandage");
         end
     end
 })

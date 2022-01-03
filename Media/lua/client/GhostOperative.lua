@@ -3,7 +3,7 @@ ProfessionFramework.addProfession('Ghost', {
     icon = "profession_GhostOperative",
     cost = 0,
     xp = {
-        [Perks.Nimble] = 5,
+        [Perks.Nimble] = 6,
         [Perks.Aiming] = 6,
         [Perks.Reloading] = 6,
     },
