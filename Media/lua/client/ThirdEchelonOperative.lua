@@ -5,7 +5,6 @@ ProfessionFramework.addProfession('ThirdEchelon', {
     xp = {
         [Perks.Lightfoot] = 5,
         [Perks.Sneak] = 5,
-        [Perks.Nimble] = 3,
         [Perks.Aiming] = 3,
         [Perks.SmallBlade] = 5
     },
@@ -15,14 +14,12 @@ ProfessionFramework.addProfession('ThirdEchelon', {
     traits = {
         'NightVision2', -- The Pro version of the cat'eyes (NightVision) trait is thanks to the ProfessionFramework mod
         'Burglar',
-        'Brave2',
         'Graceful2',
         'StandardEquipment',
         'Injured',
     },
     inventory = {
-        ["Base.DigitalWatch"] = 1,
-        ["Base.NormalHikingBag"] = 1,
+        ["Base.WristWatch_Right_ClassicMilitary"] = 1,
         ["Base.HuntingKnife"] = 1,
         ["Base.Pistol"] = 1,
         ["Base.Bullets9mmBox"] = 2,
@@ -35,10 +32,10 @@ ClothingSelectionDefinitions = ClothingSelectionDefinitions or {};
 ClothingSelectionDefinitions.ThirdEchelon = {
 	Female = {
         Hat = {
-            items = {"Hat_BalaclavaFull"}
+            items = {"Base.Hat_BalaclavaFull"}
         },
-		Tshirt = {
-			items = {"Base.Tshirt_CamoUrban"},
+		Shirt = {
+			items = {"Base.Shirt_CamoUrban"},
 		},
 		Pants = {
 			items = {"Base.Trousers_CamoUrban"},
@@ -48,6 +45,12 @@ ClothingSelectionDefinitions.ThirdEchelon = {
         },
         BeltExtra = {
             items = {"Base.HolsterSimple"}
+        },
+        Back = {
+            items = {"Base.Bag_NormalHikingBag"}
+        },
+        Hands = {
+            items = {"Base.Gloves_LeatherGlovesBlack"}
         }
-	},
+	}
 }

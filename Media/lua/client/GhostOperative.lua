@@ -17,12 +17,11 @@ ProfessionFramework.addProfession('Ghost', {
         'Injured',
     },
     inventory = {
-        ["Base.DigitalWatch"] = 1,
-        ["Base.NormalHikingBag"] = 1,
+        ["Base.WristWatch_Right_ClassicMilitary"] = 1,
         ["Base.HuntingKnife"] = 1,
-        ["Base.Pistol"] = 1,
-        ["Base.Bullets9mmBox"] = 2,
-        ["Base.9mmClip"] = 3,
+        ["Base.AssaultRifle"] = 1,
+        ["Base.556Box"] = 1,
+        ["Base.556Clip"] = 2,
     },
 })
 
@@ -31,19 +30,25 @@ ClothingSelectionDefinitions = ClothingSelectionDefinitions or {};
 ClothingSelectionDefinitions.Ghost = {
 	Female = {
         Hat = {
-            items = {"Hat_BalaclavaFull"}
+            items = {"Base.Hat_BalaclavaFull"}
         },
-		Tshirt = {
-			items = {"Base.Tshirt_CamoUrban"},
+		Shirt = {
+			items = {"Base.Shirt_CamoGreen"},
 		},
+        TorsoExtra = {
+            items = {"Base.Vest_BulletArmy"}
+        },
 		Pants = {
-			items = {"Base.Trousers_CamoUrban"},
+			items = {"Base.Trousers_CamoGreen"},
 		},
         Shoes = {
             items = {"Base.Shoes_ArmyBoots"}
         },
         BeltExtra = {
             items = {"Base.HolsterSimple"}
+        },
+        Hands = {
+            items = {"Base.Gloves_LeatherGlovesBlack"}
         }
-	},
+	}
 }
