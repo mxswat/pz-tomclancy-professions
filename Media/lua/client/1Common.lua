@@ -25,12 +25,15 @@ Events.OnNewGame.Add(function()
     local ForeArm_L = player:getBodyDamage():getBodyPart(BodyPartType.ForeArm_L)
 
     Torso_Upper:setCut(true);
-    LowerLeg_L:setCut(true);
-    ForeArm_L:setScratched(true, true);
+    player:getBodyDamage():SetBandaged(Torso_Upper:getIndex(), true, 15, true, "Base.Bandage");
+    
+    
+    ForeArm_L:generateDeepWound();
+    local bandageItem = newInventoryItem("Base.Bandage")
+    ISTimedActionQueue.add(ISApplyBandage:new(player, player, bandageItem, ForeArm_L, 10))
 
-    local item2 = newInventoryItem("Base.Bandage")
-    player:getBodyDamage():SetBandaged(Torso_Upper:getIndex(), true, 10, true, "Base.Bandage");
-    ISTimedActionQueue.add(ISApplyBandage:new(player, player, item2, ForeArm_L, 10))
+    LowerLeg_L:setScratched(true, true);
+    -- Leave for the player to heal
 end)
 
 ProfessionFramework.addTrait('StandardEquipment', {
