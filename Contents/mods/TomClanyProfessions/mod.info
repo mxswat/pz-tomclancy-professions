@@ -2,4 +2,4 @@ name=Tom Clancys Professions
 poster=poster.png
 id=TomClancyProfessions
 description=A compilation of professions inspired by Tom Clancy games
-require=ProfessionFrameworkB41Patch
+require=ProfessionFramework
