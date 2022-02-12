@@ -3,10 +3,11 @@ ProfessionFramework.addProfession('Kapkan', {
     icon = "profession_KapkanR6",
     cost = 0,
     xp = {
-        [Perks.Nimble] = 3,
+        [Perks.Nimble] = 1,
+        [Perks.Reloading] = 1,
         [Perks.Aiming] = 3,
         [Perks.Trapping] = 6,
-        [Perks.PlantScavenging] = 5,
+        [Perks.PlantScavenging] = 6,
     },
     clothing = {
         -- not working with the current version of the Profession Framework on steam. as date 02-JAN-2022
