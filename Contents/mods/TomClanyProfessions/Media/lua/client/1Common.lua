@@ -1,10 +1,10 @@
-ProfessionFramework.addTrait('Injured', {
-    name = "UI_trait_Injured",
-    description = "UI_trait_Injureddesc",
+ProfessionFramework.addTrait('TCP_Injured', {
+    name = "UI_trait_TCP_Injured",
+    description = "UI_trait_TCP_Injureddesc",
     cost = 0,
     profession = true,
     OnNewGame = function(player, square)
-        if not player:HasTrait("Injured") then
+        if not player:HasTrait("TCP_Injured") then
             return
         end
 
@@ -14,25 +14,30 @@ ProfessionFramework.addTrait('Injured', {
         local ForeArm_L = player:getBodyDamage():getBodyPart(BodyPartType.ForeArm_L)
 
         Torso_Upper:setCut(true);
-        player:getBodyDamage():SetBandaged(Torso_Upper:getIndex(), true, 25, true, "Base.Bandage");
+        player:getBodyDamage():SetBandaged(Torso_Upper:getIndex(), true, 25, true, "Base.AlcoholBandage");
 
         ForeArm_L:generateDeepWound();
-        player:getBodyDamage():SetBandaged(ForeArm_L:getIndex(), true, 30, true, "Base.Bandage");
+        player:getBodyDamage():SetBandaged(ForeArm_L:getIndex(), true, 30, true, "Base.AlcoholBandage");
 
         LowerLeg_L:setScratched(true, true);
-        if isClient() then
-            sendBandage(player:getOnlineID(), Torso_Upper:getIndex(), true, 25, false, "Base.Bandage");
-            sendBandage(player:getOnlineID(), ForeArm_L:getIndex(), true, 30, false, "Base.Bandage");
-        end
     end
 })
 
-ProfessionFramework.addTrait('StandardEquipment', {
-    name = "UI_trait_StandardEquipment",
-    description = "UI_trait_StandardEquipmentdesc",
-    cost = 0,
-    profession = true
-    -- OnGameStart = function(trait)
-    -- This trait is just informative
-    -- end
-})
+TCP = {};
+
+function TCP:isModInstalled(modID)
+    getActivatedMods():contains(modID)
+end
+
+function TCP:IsBritaArmorInstalled()
+    return isModInstalled('Brita_2')
+end
+
+function TCP:IsBritaWeaponInstalled()
+    return isModInstalled('Brita')
+end
+
+
+function TCP:AddProfessionGear()
+    
+end

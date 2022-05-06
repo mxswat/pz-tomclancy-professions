@@ -15,8 +15,7 @@ ProfessionFramework.addProfession('Kapkan', {
     traits = {
         'Outdoorsman2',
         'Brave2',
-        'StandardEquipment',
-        'Injured',
+        'TCP_Injured',
     },
     inventory = {
         ["Base.WristWatch_Right_ClassicMilitary"] = 1,
@@ -33,31 +32,3 @@ ProfessionFramework.addProfession('Kapkan', {
         "Make Cage Trap",
     }
 })
-
-ClothingSelectionDefinitions = ClothingSelectionDefinitions or {};
-
-ClothingSelectionDefinitions.Kapkan = {
-	Female = {
-        Hat = {
-            items = {"Base.Hat_BalaclavaFull"}
-        },
-		Shirt = {
-			items = {"Base.Shirt_CamoGreen"},
-		},
-        TorsoExtra = {
-            items = {"Base.Vest_BulletArmy"}
-        },
-		Pants = {
-			items = {"Base.Trousers_CamoGreen"},
-		},
-        Shoes = {
-            items = {"Base.Shoes_ArmyBoots"}
-        },
-        BeltExtra = {
-            items = {"Base.HolsterSimple"}
-        },
-        Hands = {
-            items = {"Base.Gloves_LeatherGlovesBlack"}
-        }
-	}
-}

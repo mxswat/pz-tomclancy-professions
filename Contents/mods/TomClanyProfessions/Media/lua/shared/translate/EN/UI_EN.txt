@@ -1,6 +1,4 @@
 UI_EN = {
-    UI_trait_StandardEquipment = "Standard Equipment",
-    UI_trait_StandardEquipmentdesc = "You start with some of your standard equipment",
-    UI_trait_Injured = "Injured",
-    UI_trait_Injureddesc = "You barely made it out alive from the previous encounter with the zeds"
+    UI_trait_TCP_Injured = "TCP_Injured",
+    UI_trait_TCP_Injureddesc = "You barely made it out alive from the previous encounter with the zeds"
 }
